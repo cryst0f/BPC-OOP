@@ -14,7 +14,7 @@ namespace CV06
         private double v;
         private double stena;
 
-        public Jehlan (double a, double b, double v, double stena)
+        public Jehlan(double a, double b, double v, double stena)
         {
             this.a = a;
             this.b = b;
@@ -32,13 +32,13 @@ namespace CV06
         public override double SpoctiObjem()
         {
             double obsahPlaste = stena * 0.5 * a * b;
-            double result = (1 / 3) * obsahPlaste * v;
+            double result = (1.0 / 3.0) * obsahPlaste * v;
             return result;
         }
 
         public override void Kresli()
         {
-            Console.WriteLine($"{this.GetType().Name}, strana a = {a}, strana b = {b}, vyska v = {v}, pocet stej = {stena}");
+            Console.WriteLine($"{this.GetType().Name}, strana a = {a}, strana b = {b}, vyska v = {v}, pocet sten = {stena}");
         }
     }
 }
