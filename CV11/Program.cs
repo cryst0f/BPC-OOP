@@ -21,7 +21,7 @@ var predmetyStudenti = context.Predmety
 
 foreach (var predmet in predmetyStudenti)
 {
-    Console.WriteLine($"{predmet.Zkratka} - {predmet.Nazev}: {predmet.PocetStudentu}");
+    Console.WriteLine($"{predmet.Zkratka}, {predmet.Nazev}: {predmet.PocetStudentu}");
 }
 
 Console.WriteLine();
@@ -47,6 +47,15 @@ IEnumerable<Predmet> PredmetyStudenta(int studentId)
 Console.WriteLine("Studenti predmetu ID 1 (BPC-IC2)");
 
 foreach (var student in StudentiPredmetu(1))
+{
+    Console.WriteLine($"{student.StudentId}, {student.Jmeno} {student.Prijmeni}");
+}
+
+Console.WriteLine();
+
+Console.WriteLine("Studenti predmetu ID 4 (BPC-OOP)");
+
+foreach (var student in StudentiPredmetu(4))
 {
     Console.WriteLine($"{student.StudentId}, {student.Jmeno} {student.Prijmeni}");
 }

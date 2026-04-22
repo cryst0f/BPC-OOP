@@ -51,14 +51,14 @@ namespace CV11.EFcore
             if (!context.Hodnoceni.Any())
             {
                 context.Hodnoceni.AddRange(
-                    new Hodnoceni { StudentId = 1, PredmetId = 1, DatumHodnoceni = new DateTime(2024, 1, 15), HodnoceniStudenta = 1 },
-                    new Hodnoceni { StudentId = 1, PredmetId = 2, DatumHodnoceni = new DateTime(2024, 2, 20), HodnoceniStudenta = 2 },
-                    new Hodnoceni { StudentId = 2, PredmetId = 3, DatumHodnoceni = new DateTime(2024, 1, 30), HodnoceniStudenta = 3 },
-                    new Hodnoceni { StudentId = 2, PredmetId = 4, DatumHodnoceni = new DateTime(2024, 3, 10), HodnoceniStudenta = 4 },
-                    new Hodnoceni { StudentId = 3, PredmetId = 4, DatumHodnoceni = new DateTime(2024, 2, 25), HodnoceniStudenta = 1 },
-                    new Hodnoceni { StudentId = 3, PredmetId = 2, DatumHodnoceni = new DateTime(2024, 3, 5), HodnoceniStudenta = 2 },
-                    new Hodnoceni { StudentId = 4, PredmetId = 1, DatumHodnoceni = new DateTime(2024, 1, 20), HodnoceniStudenta = 3 },
-                    new Hodnoceni { StudentId = 4, PredmetId = 4, DatumHodnoceni = new DateTime(2024, 2, 28), HodnoceniStudenta = 4 }
+                    new Hodnoceni { StudentId = 1, PredmetId = 1, DatumHodnoceni = new DateTime(2026, 1, 15), HodnoceniStudenta = 1 },
+                    new Hodnoceni { StudentId = 1, PredmetId = 2, DatumHodnoceni = new DateTime(2026, 2, 20), HodnoceniStudenta = 2 },
+                    new Hodnoceni { StudentId = 2, PredmetId = 3, DatumHodnoceni = new DateTime(2026, 1, 30), HodnoceniStudenta = 3 },
+                    new Hodnoceni { StudentId = 2, PredmetId = 4, DatumHodnoceni = new DateTime(2026, 3, 10), HodnoceniStudenta = 4 },
+                    new Hodnoceni { StudentId = 3, PredmetId = 4, DatumHodnoceni = new DateTime(2026, 2, 25), HodnoceniStudenta = 1 },
+                    new Hodnoceni { StudentId = 3, PredmetId = 2, DatumHodnoceni = new DateTime(2026, 3, 5), HodnoceniStudenta = 2 },
+                    new Hodnoceni { StudentId = 4, PredmetId = 1, DatumHodnoceni = new DateTime(2026, 1, 20), HodnoceniStudenta = 3 },
+                    new Hodnoceni { StudentId = 4, PredmetId = 4, DatumHodnoceni = new DateTime(2026, 2, 28), HodnoceniStudenta = 4 }
                 );
 
                 context.SaveChanges();
