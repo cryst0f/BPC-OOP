@@ -1,0 +1,49 @@
+﻿<Window x:Class="CV12WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CV12WPF"
+        mc:Ignorable="d"
+        Title="Kalkulacka" Height="250" Width="500">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90"/>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="90"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="1. operand" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="Operand1TextBox" Width="110" Height="22"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="2. operand" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="Operand2TextBox" Width="110" Height="22"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Operace" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="2" Grid.Column="1" x:Name="OperationComboBox" Width="110" Height="22" SelectedIndex="0">
+            <ComboBoxItem Content="+" Tag="plus"/>
+            <ComboBoxItem Content="-" Tag="minus"/>
+            <ComboBoxItem Content="*" Tag="krat"/>
+            <ComboBoxItem Content="/" Tag="deleno"/>
+        </ComboBox>
+
+        <Button Grid.Row="1" Grid.Column="2"
+                Content="Spočti"
+                Width="70"
+                Height="23"
+                Click="CalculateButton_Click"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="3"
+                   x:Name="ResultTextBlock"
+                   FontSize="24"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"/>
+    </Grid>
+</Window>

@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CV12/CV12.csproj" />
+  <Project Path="CV12WEB/CV12WEB.csproj" />
+  <Project Path="CV12WPF/CV12WPF.csproj" />
+</Solution>
